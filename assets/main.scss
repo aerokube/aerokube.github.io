@@ -1,3 +1,6 @@
+---
+---
+
 $text-color: #46433A;
 $anchor-text-color: #CE534D;
 $background-color: #F1EED9;
@@ -13,6 +16,9 @@ main {
 	padding: 0 20px;
 }
 
+p {
+	text-align: justify;
+}
 /*** wrapper div for both header and main ***/
 .wrapper {
 	margin-top: 10%;
