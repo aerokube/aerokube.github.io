@@ -1,6 +1,6 @@
 # general configuration
 url: http://aerokube.com
-baseurl: '/'
+baseurl: ''
 
 # compass configuration
 compass:
