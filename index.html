@@ -3,19 +3,39 @@ layout: base
 ---
 <div class="wrapper">
     <header>
-        {% if site.compass.logo %}
-        <div class="logo-container">
-          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+        <div class="left">
+            {% if site.compass.logo %}
+            <div class="logo-container">
+              <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+            </div>
+            {% endif %}
+    
+            {% if site.compass.author %}
+            <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
+            {% endif %}
+    
         </div>
-        {% endif %}
-
-        {% if site.compass.author %}
-        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
-        {% endif %}
-
-        {% if site.compass.tagline %}
-        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
-        {% endif %}
+        <div class="right">
+            <ul class="fa-ul main-list">
+                <li class="main-list-item">
+                    <span class="fa fa-github fa-lg main-list-item-icon"></span>
+                    <a href="https://github.com/aerokube">Our Products</a>
+                </li>
+                <li class="main-list-item">
+                    <span class="fa fa-twitter fa-lg main-list-item-icon"></span>
+                    <a href="http://twitter.com/aerokube">@aerokube</a>
+                </li>
+                <li class="main-list-item">
+                    <span class="fa fa-telegram fa-lg main-list-item-icon"></span>
+                    <a href="https://t.me/joinchat/AAAAAAkZ1DfzAv-eYWTlTQ">Support</a>
+                </li>
+                <li class="main-list-item">
+                    <span class="fa fa-envelope fa-lg main-list-item-icon"></span>
+                    <a href="mailto:support@aerokube.com">support@aerokube.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
     </header>
     <main>
       {% if site.compass.include_content %}

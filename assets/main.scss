@@ -67,10 +67,6 @@ since it must be aligned with the content */
 	height: 96px;
 	display: inline-block;
 	background-size: cover;
-	//border-radius: 50%;
-	//-moz-border-radius: 50%;
-	//border: 2px solid $background-color;
-	//box-shadow: 0 0 0 3px $text-color;
 }
 
 /*** author ***/
@@ -85,7 +81,7 @@ since it must be aligned with the content */
 .tagline-container p {
 	font-size: 1.3em;
 	text-align: center;
-	margin-bottom: 2em;
+	//margin-bottom: 2em;
 }
 
 /******/
@@ -125,20 +121,34 @@ footer {
 
 /* All other devices (768px and up) */
 @media (min-width: 768px) {
-	/* past 768px the layout is changed and the wrapper has a fixed width of 680px
-	to accomodate both the header column and the content column */
 	.wrapper {
 		width: 680px;
 	}
-
-	/* the header column stays left and has a dynamic width with all contents
-	aligned right */
+	
 	header {
+		position: relative;
+	}
+
+	header .left {
 		float: left;
 		width: 46%;
 		text-align: right;
 	}
+	
+	header .right {
+		width: 46%;
+		margin-left: 54%;
+		padding: 0;
 
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	.clear {
+		clear: both;
+	}
+	
 	.author-container h1,
 	.logo-container,
 	.tagline-container p {
@@ -146,8 +156,5 @@ footer {
 	}
 
 	main {
-		width: 46%;
-		margin-left: 54%;
-		padding: 0;
 	}
 }
