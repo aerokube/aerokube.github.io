@@ -1,6 +1,6 @@
 # general configuration
-url: http://vania-pooh.github.io
-baseurl: '/aerokube.com'
+url: http://aerokube.com
+baseurl: '/'
 
 # compass configuration
 compass:
