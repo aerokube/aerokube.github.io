@@ -7,7 +7,7 @@ compass:
   # an avatar or logo (optional)
   logo: "/images/aerokube.png"
   # author will appear under the avatar (optional)
-  author: "aerokube"
+  author: "Aerokube"
   # tagline will appear under the title (optional)
   tagline: "Software testing infrastructure"
   # if include_content is true, the contents of the content.html include will be
