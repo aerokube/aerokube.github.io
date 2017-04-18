@@ -1,5 +1,5 @@
 # Selenium: done in 60 seconds
-Selenium is nowadays an indisputable standard in browser automation. Its architecture is well-known and all popular browsers are supported out of the box. More than that commercial companies provide Selenium infrastructure as a paid service. But is it comfortable to use Selenium server on developer's machine?
+[Selenium](http://seleniumhq.org/) is nowadays an indisputable standard in browser automation. Its architecture is well-known and all popular browsers are supported out of the box. More than that commercial companies provide Selenium infrastructure as a paid service. But is it comfortable to use Selenium server on developer's machine?
 
 ## Problem
 Being web-application developer or QA automation engineer you can face the following inconveniences in your experience with Selenium server:
@@ -41,7 +41,9 @@ Selenoid can be used in conjunction with Ggr to organize large Selenium clusters
 ```
 # docker run -d --name selenoid-ui --net host aerokube/selenoid-ui:1.0.0
 ```
+Open UI in browser at ```http://localhost:8080/```:
 (picture: selenoid ui)
+
 2) Send Selenoid status to an external system like [Graphite](), [InfluxDB](), [ElasticSearch](), etc. Selenoid outputs its status on the following URL:
 ```
 http://localhost:4444/status
@@ -67,7 +69,7 @@ The output is JSON of the following format:
     }
   }
 ```
-Selenoid returns how many containers can be run in parallel on this host ("total"), how many of them are running ("used"), how many requests wait in queue ("queued") and how many containers are starting now ("pending"). Finally "browsers" section contains browser consumption by version and user name. User name is extracted from Basic HTTP headers if present (default is "unknown" if not present). Though you could process this JSON manually with some script we recommend to use [Telegraf](http://github.com/influxdata/telegraf/) for that purpose. Read more about uploading data with Telegraf in [this](https://github.com/aerokube/selenoid#sending-statistics-to-external-systems) section of our docs.
+Selenoid returns how many containers can be run in parallel on this host (**total**), how many of them are running (**used**), how many requests wait in queue (**queued**) and how many containers are starting now (**pending**). Finally **browsers** section contains browser consumption by version and user name. User name is extracted from Basic HTTP headers if present (default is **unknown** if not present). Though you could process this JSON manually with some script we recommend to use [Telegraf](http://github.com/influxdata/telegraf/) for that purpose. Read more about uploading data with Telegraf in [this](https://github.com/aerokube/selenoid#sending-statistics-to-external-systems) section of our docs.
 
 ## Ready to use containers with browsers
 That is good to have a tool that automatically starts containers with different browsers for you. But that's even better to have ready to use containers with various browser versions. We did an effort and packed a lof of different versions of Firefox, Chrome and Opera in containers. You can see all available containers on [selenoid@DockerHub](http://hub.docker.com/u/selenoid/).
@@ -86,4 +88,4 @@ screenResolution: 1280x1024x24
 ```
 
 ## Conclusion
-In this article I demonstrated how to efficiently orchestrate different Selenium browsers. Trust me - Selenium can be painless. If you are interested in efficient software testing infrastructure - find more open-source tools our [Github](http://github.com/aerokube) or follow us on [@aerokube](http://twitter.com/aerokube).
+In this article I demonstrated how to efficiently orchestrate different Selenium browsers. Trust me - Selenium can be painless. If you are interested in efficient software testing infrastructure - find more open-source tools in our [Github](http://github.com/aerokube) or follow us on [@aerokube](http://twitter.com/aerokube).
