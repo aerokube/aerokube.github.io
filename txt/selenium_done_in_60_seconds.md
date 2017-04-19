@@ -44,7 +44,7 @@ Selenoid can be used in conjunction with Ggr to organize large Selenium clusters
 Open UI in browser at ```http://localhost:8080/```:
 (picture: selenoid ui)
 
-2) Send Selenoid status to an external system like [Graphite](), [InfluxDB](), [ElasticSearch](), etc. Selenoid outputs its status on the following URL:
+2) Send Selenoid status to an external system like [Graphite](https://github.com/graphite-project/), [InfluxDB](https://github.com/influxdata/influxdb), [ElasticSearch](https://github.com/elastic/elasticsearch), etc. Selenoid outputs its status on the following URL:
 ```
 http://localhost:4444/status
 ```
