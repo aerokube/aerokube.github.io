@@ -49,6 +49,7 @@ $ curl -o selenoid.exe https://github.com/aerokube/selenoid/releases/download/1.
 C:\selenoid.exe -conf C:\browsers.json -disable-docker -limit 4 > C:\selenoid.log 2>&1
 ```
 Here we assume that all files from previous steps were saved to ```C:\```. Selenoid log will be then written to ```C:\selenoid.log```. Notice ```-limit``` configuration flag - it determines how many sessions can be started simultaneously. When this limit is reached - all new session requests are waiting in queue like with Selenium hub.
+
 6) That's it! Just launch your tests against the same url:
 ```
 http://localhost:4444/wd/hub
