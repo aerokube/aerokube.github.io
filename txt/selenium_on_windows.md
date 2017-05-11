@@ -3,7 +3,7 @@
 Created more than 30 years ago Microsoft Windows nowadays remains an indisputable leading operating system on desktop and laptop computers. You simply can not ignore this fact when developing a web application. In this article I am going to discuss some particularities of using Selenium on Windows platform and will provide a simple and tested solution that dramatically simplifies things.
 
 ## How Windows differs from Linux
-In my previous articles ([one](https://hackernoon.com/selenium-testing-a-new-hope-7fa87a501ee9), [two](https://hackernoon.com/selenium-testing-a-new-hope-7fa87a501ee9), [three](https://medium.com/@aandryashin/selenium-done-in-60-seconds-176796f8bdc7)) I described open source tools and approaches to organize scalable Selenium cluster and to efficiently work with Selenium being automatic tests developer. All these articles were using Linux as base deployment platform. So what are the differences of Windows from Selenium usage perspective?
+In my previous articles ([one](https://hackernoon.com/selenium-testing-a-new-hope-7fa87a501ee9), [two](https://hackernoon.com/selenium-testing-a-new-hope-7fa87a501ee9), [three](https://medium.com/@aandryashin/selenium-done-in-60-seconds-176796f8bdc7)) I described open source tools and approaches to organize scalable Selenium cluster and to efficiently work with Selenium on developer's computer. All these articles were using Linux as base deployment platform. So what are the differences of Windows from Selenium usage perspective?
 
 (picture)
 
@@ -16,7 +16,7 @@ As you can see many modern approaches like using headless X server and container
 ## Creating order from chaos 
 To advance in achieving our goal we will apply changes step by step. First of all let's make our solution lightweight. As you probably know traditional Selenium installation on Windows looks like the following:
 (picture: selenium server + driver + ie)
-Here we have Selenium server running under Java virtual machine (JRE), then IEDriverServer or EdgeDriver binary and finally IE or Edge browser binary itself. In this chain there is at least one wek link - Selenium server and Java. In this architecture Selenium server is just a proxy server starting driver binary configured to open some random free port and then transferring all requests to this port. Proxying network traffic is a trivial task in any programming language because all the work is in fact done by networking module of the operating system. This is why installing 50 Mb Java distribution and downloading 20 Mb Selenium server binary is an overkill for simple proxying. We certainly can do better - use [Selenoid](https://github.com/aerokube/selenoid) instead of Selenium server.
+Here we have Selenium server running under Java virtual machine (JRE), then IEDriverServer or EdgeDriver binary and finally IE or Edge browser binary itself. In this chain there is at least one weak link - Selenium server and Java. In this architecture Selenium server is just a proxy server starting driver binary configured to open some random free port and then transferring all requests to this port. Proxying network traffic is a trivial task in any programming language because all the work is in fact done by networking module of the operating system. This is why installing 50 Mb Java distribution and downloading 20 Mb Selenium server binary is an overkill for simple proxying. We certainly can do better - use [Selenoid](https://github.com/aerokube/selenoid) instead of Selenium server.
 
 ### Replacing Selenium server with Selenoid
 Selenoid is a lightweight Selenium server replacement written in [Golang](https://golang.org/). It is distributed as one small (~ 7 Mb) binary and does not have any external dependencies. This is why in order to use it - just download and run the binary. In my [previous](https://medium.com/@aandryashin/selenium-done-in-60-seconds-176796f8bdc7) article I briefly described how useful Selenoid could be to launch browsers in Docker containers - its main application. But the second supported mode is launching any standalone binaries instead of containers and proxying network traffic to them - just the same way like Selenium server does with IEDriverServer and EdgeDriver. Replacing Selenium server with Selenoid is very easy. In this example we will launch Internet Explorer 11:
@@ -78,7 +78,7 @@ By replacing Selenium with Selenoid and ```IEDriverServer.exe``` with ```headles
 ie.usePerProcessProxy = true
 ```
 
-2) You web application can be using [cookies](https://en.wikipedia.org/wiki/HTTP_cookie) to store some important information. In Windows these files are stored per-user and default behavior is to reuse cookie contents among sessions. This can lead to flaky tests. In order to avoid sharing cookies just start IE in private mode:
+2) Your web app can use [cookies](https://en.wikipedia.org/wiki/HTTP_cookie) to store some important information. In Windows these files are stored per-user and default behavior is to reuse cookie contents among sessions. This can lead to flaky tests. In order to avoid sharing cookies just start IE in private mode:
 ```
 ie.browserCommandLineSwitches = "-private"
 ```
