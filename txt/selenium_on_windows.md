@@ -99,4 +99,4 @@ requireWindowFocus = false
 ``` 
 
 ## Conclusion
-In this article I briefly described major issue you can face to when running your Selenium tests on Windows platform and provided an easy solution. I continue to assert - Selenium can be painless. The trick is to cook it correctly.
+In this article I briefly described major issues you can face to when running your Selenium tests on Windows platform and provided an easy solution. I continue to assert - Selenium can be painless. The trick is to cook it correctly.
