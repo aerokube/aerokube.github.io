@@ -1,9 +1,9 @@
 import Page from "../components/ui/page";
-import Head from "../components/ui/head";
+import Head from "../components/ui/page/head";
 import Section from "../components/ui/section";
 import Menu from "../components/ui/shared/menu";
 import CLI from "../components/ui/shared/cli"
-import Projects from "../components/ui/shared/projects"
+import Projects from "../components/view/landing/projects"
 
 import Articles from "../components/view/landing/articles"
 
@@ -11,7 +11,7 @@ const Index =
     () => (
         <Page>
             <Head>
-                <title>Aerokube</title>
+                <title>Aerokube • Software testing infrastructure</title>
             </Head>
 
             <Section theme="purple" style={{paddingTop: 0, paddingBottom: 0}}>
@@ -29,7 +29,7 @@ const Index =
                 <p className="cli-download">
                     Ready to dive? <a className="cli-download__link"
                                       href="https://github.com/aerokube/cm/releases/latest">Download CM</a> - cli
-                    tool  <br/> for aerokube projects.
+                    tool <br/> for aerokube projects.
                 </p>
 
                 <div className='cli'>
@@ -40,20 +40,7 @@ const Index =
             </Section>
 
             <Articles/>
-
-            <Section theme="yellow" style={{paddingBottom: 0}}>
-                <h1 className="title" id="projects-section">
-                    Open source projects
-                </h1>
-
-                <p>
-                    More projects will come soon! Stay tuned via <a className="social"
-                                                                    href="http://twitter.com/aerokube">@aerokube</a>
-                    twitter.
-                </p>
-
-                <Projects/>
-            </Section>
+            <Projects/>
 
 
             <style jsx>{`
@@ -72,7 +59,8 @@ const Index =
         position: relative;
         width: 100%;
         min-height: 398px;
-        max-width: 740px;
+        max-width: 560px;
+        font-size: 10px;
       }
 
       /* = SEPARATOR
@@ -123,15 +111,15 @@ const Index =
         margin-top: 50px;
       }
 
-      .social {
-        text-decoration: underline;
-        color: #000;
-      }
-
       @media screen and (min-width: 560px) {
         .cli :global(>) :global(*) {
           margin-bottom: -80px;
         }
+
+        .cli__inner {
+            max-width: 760px;
+        }
+
       }
             `}</style>
         </Page>

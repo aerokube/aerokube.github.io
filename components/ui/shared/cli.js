@@ -69,7 +69,7 @@ const CLI = () => (
       }
 
       .cli__body {
-        background-color: #0b0f15;
+        background-color: #FFFFD8;
         min-height: 398px;
         padding-bottom: 20px;
       }
@@ -87,16 +87,16 @@ const CLI = () => (
         border-radius: 4px;
         width: 8px;
         height: 8px;
-        background-color: #3e434a
+        background-color: #a8b5c8
       }
 
       .cli__header {
         text-align: center;
         padding: 10px 0;
         font-size: 12px;
-        color: #8d98a8;
+        color: #fff;
         font-weight: 500;
-        background-color: #4A5877;
+        background-color: #7a91c4;
       }
 
       .cli__lines {
@@ -105,9 +105,13 @@ const CLI = () => (
         font-size: 14px;
         line-height: 20px;
         font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Courier New", monospace;
-        /*font-weight: 600;*/
         letter-spacing: .1em;
-        color: #b3bece;
+        color: #333333;
+        overflow: scroll;
+      }
+
+      .cli__line {
+        word-wrap: break-word;
       }
 
       .cli__line-scope {
@@ -115,7 +119,7 @@ const CLI = () => (
       }
 
       .cli__line-time {
-        color: #dad9d7;
+        color: #767574;
       }
 
       .cli__line-diff {
@@ -123,7 +127,7 @@ const CLI = () => (
       }
 
       .cli__line--result {
-        color: #8b8b8d;
+        color: #555;
       }
 
       .cli__line--break {

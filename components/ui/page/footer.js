@@ -6,22 +6,22 @@ const Footer =
 
             <style jsx>{`
                 .footer {
-                    max-width: 880px;
-                    margin-top: 80px;
+                    padding-top: 80px;
                     padding-bottom: 30px;
                     position: relative;
+                    background-color: #454857
                 }
 
                 @media screen and (min-width: 560px) {
                     .footer {
-                        margin-top: 120px;
+                        padding-top: 120px;
                         padding-bottom: 60px;
                     }
                 }
 
                 @media screen and (min-width: 960px) {
                     .footer {
-                        margin-top: 130px;
+                        padding-top: 130px;
                     }
                 }
 
@@ -31,6 +31,11 @@ const Footer =
                     color: rgba(141, 146, 153, .5);
                 }
             `}</style>
+
+
+            <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
+            <script type="text/javascript" async="" src="static/js/ymetric.js"></script>
+            <noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/43539754" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
         </footer>
     );
 

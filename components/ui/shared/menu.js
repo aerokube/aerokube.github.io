@@ -1,13 +1,13 @@
 export default () => (
     <div className="header">
-        <div className="logo">Aerokube</div>
+        <div className="logo"><img className="logo-img" src="static/img/logo.svg" height="50px"/>Aerokube</div>
 
         <div className="menu">
-            <a className="item" href="#projects-section">Projects</a>
-            <a className="item" href="https://github.com/aerokube">GitHub</a>
-            <a className="item" href="https://telegram.me/aerokube">Telegram</a>
-            <a className="item" href="http://twitter.com/aerokube">Twitter</a>
-            <a className="item" href="mailto:support@aerokube.com">Contact Us</a>
+            <a className="item" href="#projects-section"><i className="fa fa-bolt" aria-hidden="true"></i>&nbsp;Projects</a>
+            <a className="item" href="https://github.com/aerokube"><i className="fa fa-github" aria-hidden="true"></i>&nbsp;GitHub</a>
+            <a className="item" href="https://telegram.me/aerokube"><i className="fa fa-telegram" aria-hidden="true"></i>&nbsp;Telegram</a>
+            <a className="item" href="http://twitter.com/aerokube"><i className="fa fa-twitter" aria-hidden="true"></i>&nbsp;Twitter</a>
+            <a className="item" href="mailto:support@aerokube.com"><i className="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;Contact&nbsp;Us</a>
         </div>
 
         <style jsx>{`
@@ -23,9 +23,10 @@ export default () => (
             .menu {
                 height: 100%;
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
                 text-transform: uppercase;
                 font-size: 15px;
+                flex-direction: column;
             }
 
             .item {
@@ -41,6 +42,19 @@ export default () => (
                 margin-right: 50px;
                 font-size: 1.5em;
             }
+
+            .logo-img {
+                margin-bottom: -20px;
+                margin-right: 10px;
+            }
+
+
+             @media screen and (min-width: 560px) {
+                .menu {
+                    flex-direction: row;
+                    align-items: center;
+                }
+             }
         `}</style>
     </div>
 )
