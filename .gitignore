@@ -1,6 +1,20 @@
-_site/
-.sass-cache/
-.jekyll-metadata
+#IDEA Files
 .idea
+target
 *.iml
-Gemfile.lock
+*.ipr
+*.exec
+
+#Eclipse files
+*.settings
+*.classpath
+*.project
+*.pydevproject
+BenchmarkList
+CompilerHints
+
+out/_*
+out/static/
+out/index.html
+.next/
+node_modules/
