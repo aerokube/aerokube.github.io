@@ -1,6 +1,6 @@
 # Aerokube website
 
-This repo powers aerokube.com website
+This repo powers [aerokube.com](http://aerokube.com) website
 
 ### Dev
 
