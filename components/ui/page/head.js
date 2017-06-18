@@ -8,12 +8,14 @@ export default ({children}) => (
         <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/favicon.ico"/>
         <link rel="canonical" href="http://aerokube.com/"/>
         <meta name="author" content="Aerokube"/>
-        <meta name="description" content="Software testing infrastructure"/>
-        <meta property="og:title" content="Software testing infrastructure"/>
+        <meta name="description" content="Software testing infrastructure: scalable Selenium clusters and automatic test runtimes. Software testing automation consulting."/>
+        <meta name="keywords" content="aerokube, selenium, docker, testing, software, infrastructure"/>
+        <meta property="og:title" content="Aerokube • Software testing infrastructure"/>
         <meta property="og:url" content="http://aerokube.com/"/>
+        <meta property="og:type" content="website"/>
         <meta property="og:image" content="http://aerokube.com/static/img/logo.png"/>
-        <meta property="og:description" content=""/>
-        <meta property="og:site_name" content="Software testing infrastructure"/>
+        <meta property="og:description" content="Software testing infrastructure: scalable Selenium clusters and automatic test runtimes. Software testing automation consulting."/>
+        <meta property="og:site_name" content="Aerokube • Software testing infrastructure"/>
         {children}
     </Head>
 )
