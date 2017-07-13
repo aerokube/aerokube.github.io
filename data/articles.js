@@ -19,12 +19,16 @@ export default [
         title: "Previous article translated to Russian",
         url: "https://habrahabr.ru/post/327184/"
     },
-   {
+    {
         title: "Selenium on Windows: revisited",
         url: "https://medium.com/@aandryashin/selenium-on-windows-revisited-1ab8d51ccc06"
     },
-  {
+    {
         title: "Previous article translated to Russian",
         url: "https://habrahabr.ru/post/329256/"
+    },
+    {
+        title: "Selenium: easy as a pie",
+        url: "https://medium.com/@aandryashin/selenium-easy-as-a-pie-df8b5876b541"
     },
 ]
