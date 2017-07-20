@@ -8,27 +8,19 @@ export default [
         url: "https://hackernoon.com/selenium-testing-a-new-hope-a00649cdb100#.nbm5hsyqn"
     },
     {
-        title: "Previous article translated to Russian",
-        url: "https://habrahabr.ru/post/322742/"
-    },
-    {
         title: "Selenium: done in 60 seconds",
         url: "https://medium.com/@aandryashin/selenium-done-in-60-seconds-176796f8bdc7"
-    },
-    {
-        title: "Previous article translated to Russian",
-        url: "https://habrahabr.ru/post/327184/"
     },
     {
         title: "Selenium on Windows: revisited",
         url: "https://medium.com/@aandryashin/selenium-on-windows-revisited-1ab8d51ccc06"
     },
     {
-        title: "Previous article translated to Russian",
-        url: "https://habrahabr.ru/post/329256/"
-    },
-    {
         title: "Selenium: easy as a pie",
         url: "https://medium.com/@aandryashin/selenium-easy-as-a-pie-df8b5876b541"
+    },
+    {
+        title: "Selenium: an Apple story",
+        url: "https://medium.com/@aandryashin/selenium-an-apple-story-ab0c0b68cd35"
     },
 ]
