@@ -26,7 +26,7 @@
       "description": "Lightweight router to create scalable Selenium clusters",
       "org": "aerokube",
       "name": "ggr",
-      "release": "1.2.5"
+      "release": "1.2.6"
     }
   ]
 }
