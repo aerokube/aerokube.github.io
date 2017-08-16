@@ -8,7 +8,7 @@ export default () => (
         </h1>
 
         <p>
-            More projects will come soon! Stay tuned via twitter
+            More projects will come soon! Stay tuned 
             <a className="social" href="http://twitter.com/aerokube">@aerokube</a>.
         </p>
 
