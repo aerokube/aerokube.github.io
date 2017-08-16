@@ -21,7 +21,7 @@ const Index =
                 </h1>
 
                 <p>
-                    We use them to help us in our everyday work. That's why we know this tools are awesome!
+                    We use them in our everyday work and they are awesome!
                 </p>
 
                 <div className='separator' data-after='start'/>
@@ -29,7 +29,7 @@ const Index =
                 <p className="cli-download">
                     Ready to dive? <a className="cli-download__link"
                                       href="https://github.com/aerokube/cm/releases/latest">Download CM</a> - cli
-                    tool <br/> for aerokube projects.
+                    tool <br/> for Aerokube projects.
                 </p>
 
                 <div className='cli'>
