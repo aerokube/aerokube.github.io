@@ -12,14 +12,14 @@
       "description": "Alternative Selenium Hub implementation launching browsers within Docker containers",
       "org": "aerokube",
       "name": "selenoid",
-      "release": "1.3.6"
+      "release": "1.3.7"
     },
     {
       "title": "Selenoid UI",
       "description": "Standalone user interface for Selenoid",
       "org": "aerokube",
       "name": "selenoid-ui",
-      "release": "1.4.1"
+      "release": "1.4.2"
     },
     {
       "title": "Ggr",
