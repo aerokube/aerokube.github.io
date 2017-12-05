@@ -23,4 +23,8 @@ export default [
         title: "Selenium: an Apple story",
         url: "https://medium.com/@aandryashin/selenium-an-apple-story-ab0c0b68cd35"
     },
+    {
+        title: "Selenium: Growing Muscles",
+        url: "https://medium.com/@ivan_krutov/selenium-growing-muscles-9df57ee77a3a"
+    },
 ]
