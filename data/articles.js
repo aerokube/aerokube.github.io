@@ -27,4 +27,8 @@ export default [
         title: "Selenium: Growing Muscles",
         url: "https://medium.com/@ivan_krutov/selenium-growing-muscles-9df57ee77a3a"
     },
+    {
+        title: "Selenium: Clear as a Bell",
+        url: "https://medium.com/@aandryashin/selenium-clear-as-a-bell-64b672f42689"
+    },    
 ]
