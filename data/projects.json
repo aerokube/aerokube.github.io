@@ -19,7 +19,7 @@
       "description": "Standalone user interface for Selenoid",
       "org": "aerokube",
       "name": "selenoid-ui",
-      "release": "1.5.6"
+      "release": "v1.5.6"
     },
     {
       "title": "Ggr",
