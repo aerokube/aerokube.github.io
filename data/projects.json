@@ -9,10 +9,10 @@
     },
     {
       "title": "Selenoid",
-      "description": "Alternative Selenium Hub implementation launching browsers within Docker containers",
+      "description": "Selenium Hub replacement launching browsers within Docker containers",
       "org": "aerokube",
       "name": "selenoid",
-      "release": "1.5.2"
+      "release": "1.5.3"
     },
     {
       "title": "Selenoid UI",
