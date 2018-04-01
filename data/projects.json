@@ -5,14 +5,14 @@
       "description": "Configuration manager for Aerokube products",
       "org": "aerokube",
       "name": "cm",
-      "release": "1.4.0"
+      "release": "1.4.2"
     },
     {
       "title": "Selenoid",
       "description": "Selenium Hub replacement launching browsers within Docker containers",
       "org": "aerokube",
       "name": "selenoid",
-      "release": "1.5.3"
+      "release": "1.6.0"
     },
     {
       "title": "Selenoid UI",
@@ -26,7 +26,7 @@
       "description": "Lightweight router to create scalable Selenium clusters",
       "org": "aerokube",
       "name": "ggr",
-      "release": "1.5.0"
+      "release": "1.5.2"
     }
   ]
 }
