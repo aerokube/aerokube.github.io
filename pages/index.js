@@ -53,6 +53,7 @@ const Index =
         padding-bottom: 30px;
         z-index: 1;
         font-size: 10px;
+        max-width: 90%;
       }
 
 

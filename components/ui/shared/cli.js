@@ -35,6 +35,8 @@ const CLI = () => (
                 <div className="cli__line cli__line--break"/>
                 <div className="cli__line"> To get instant help just type:</div>
                 <div className="cli__line"> ./cm --help</div>
+                <div className="cli__line cli__line--break"/>
+                <div className="cli__line cli__line--break"/>
             </div>
         </div>
         <style jsx>{`
