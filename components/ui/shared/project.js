@@ -1,26 +1,25 @@
 //language=CSS
-const Project = ({title, description, org, name, release, documentation = `http://aerokube.com/${name}`}) => (
+const Project = ({title, description, org, name, stars, release, documentation}) => (
     <div className="project">
-        <a className="project__image" href={`https://github.com/${org}/${name}`}>
-            <img src="static/img/github.svg"/>
-        </a>
 
-        <a className="project__title" href={`https://github.com/${org}/${name}`}>{title}</a>
+        <div className="project__banner">
+            <a className="project__image" href={`https://github.com/${org}/${name}`}>
+                <img src="static/img/github.svg"/>
+            </a>
+            <a className="project__stars" href={`https://github.com/${org}/${name}/stargazers`}><i className="fa fa-star" aria-hidden="true"></i> {stars}</a>
+        </div>
+
+
+        <a className="project__title" href={`https://github.com/${org}/${name}`}>{title} </a>
+
         <div className="project__description">{description}</div>
         <div className="project__bottom">
             <div className="column">
-                <div className="column__title">
-                    Documentation
-                </div>
-
-                <a className="link" href={`${documentation}/${release}`}>{release} <sup className="badge">stable</sup></a>
-                <a className="link" href={`${documentation}/latest`}>latest</a>
+                <a className="release" href={`https://github.com/${org}/${name}/releases`}>{release.name} <sup className="badge">Stable</sup></a>
             </div>
            <div className="column">
-                <div className="column__title">
-                    Release Notes
-                </div>
-               <a className="link" href={`https://github.com/${org}/${name}/releases/tag/${release}`}>{release} <sup className="badge">stable</sup></a>
+               <a className="link" href={release.url}>Release Notes</a>
+               <a className="link" href={documentation}>Documentation</a>
             </div>
         </div>
 
@@ -33,16 +32,31 @@ const Project = ({title, description, org, name, release, documentation = `http:
                 flex-direction: column;
                 margin: 10px;
                 border-radius: 3px;
+                flex: 0 0 270px;
+            }
+
+            .project__banner {
+                align-self: center;
+                margin-top: 20px;
+                flex: 1;
+                text-align: right;
+            }
+
+            .project__stars {
+                margin-top: 5px;
+                font-size: 14px;
+                text-align: right;
+                color: #444;
+                text-decoration: none;
             }
 
             .project__image {
                 align-self: center;
-                height: 180px;
-                padding: 20px 0 20px 0;
+                display: block;
             }
 
             .project__image > img {
-                height: 100%;
+                height: 180px;
             }
 
             .project__title {
@@ -53,60 +67,67 @@ const Project = ({title, description, org, name, release, documentation = `http:
                 color: #000;
                 display: block;
                 text-decoration: none;
+                flex: 1;
             }
 
             .project__description {
-                height: 60px;
                 opacity: 0.5;
                 font-size: 14px;
                 text-align: center;
                 border-bottom: 1px solid #e0e4e7;
                 color: #000000;
-                margin-top: 5px;
-                margin-right: 20px;
-                margin-left: 20px;
+                margin: 5px 20px 0;
+                padding-bottom: 10px;
+                flex-basis: 60px;
             }
 
             .project__bottom {
                 display: flex;
-                margin-top: 5px;
-                height: 70px;
+                margin-top: 10px;
                 align-items: flex-start;
                 justify-content: space-between;
                 padding-left: 20px;
                 padding-right: 20px;
+                flex: 1 1 50px;
             }
 
             .column {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                height: 100%;
             }
 
-            .column__title {
-                text-transform: uppercase;
-                color: #666;
-                font-size: 0.6em;
-                justify-content: flex-start;
+            .release {
+                align-self: center;
+                margin-top: 3px;
+                margin-bottom: 3px;
+                color: #444;
+                font-size: 2em;
+                text-decoration: none;
+                display: block;
             }
 
             .link {
                 display: block;
-                align-self: center;
                 margin-top: 3px;
                 margin-bottom: 3px;
-                text-transform: uppercase;
                 text-decoration: none;
                 color: #444;
+                font-size: 0.9em;
+                align-self: flex-start;
+            }
+
+            .link:hover {
+                color: cornflowerblue;
             }
 
             .badge {
-                display: inline;
                 background-color: cornflowerblue;
                 border-radius: 4px;
                 padding-left: 3px;
                 padding-right: 3px;
-                margin-bottom: 3px;
-                font-size: 0.5em;
+                font-size: 0.4em;
                 text-transform: none;
                 color: #fff;
             }

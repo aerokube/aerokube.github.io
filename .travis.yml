@@ -2,7 +2,12 @@ language: node_js
 node_js:
   - "7"
 
+branches:
+  except:
+  - master
+
 script:
+  - node github.js
   - yarn build
 
 cache:

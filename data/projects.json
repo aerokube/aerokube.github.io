@@ -1,32 +1,95 @@
 {
   "projects": [
     {
-      "title": "CM",
-      "description": "Configuration manager for Aerokube products",
-      "org": "aerokube",
-      "name": "cm",
-      "release": "1.5.0"
-    },
-    {
-      "title": "Selenoid",
-      "description": "Selenium Hub replacement launching browsers within Docker containers",
       "org": "aerokube",
       "name": "selenoid",
-      "release": "1.6.1"
+      "description": "Selenium Hub successor running browsers within containers. Scalable, immutable, self hosted Selenium-Grid on any platform with single binary.",
+      "stars": 669,
+      "title": "Selenoid",
+      "release": {
+        "name": "1.7.0",
+        "url": "https://github.com/aerokube/selenoid/releases/tag/1.7.0",
+        "publishedAt": "2018-07-18T08:40:58Z"
+      },
+      "documentation": "https://aerokube.com/selenoid/latest/"
     },
     {
-      "title": "Selenoid UI",
-      "description": "Standalone user interface for Selenoid",
+      "org": "aerokube",
+      "name": "moon",
+      "description": "Moon project documentation",
+      "stars": 6,
+      "title": "Moon",
+      "release": {
+        "name": "1.1.2",
+        "url": "https://github.com/aerokube/moon/releases/tag/1.1.2",
+        "publishedAt": "2018-06-05T14:16:16Z"
+      },
+      "documentation": "http://aerokube.com/moon/latest"
+    },
+    {
+      "org": "aerokube",
+      "name": "cm",
+      "description": "Configuration manager for Aerokube products",
+      "stars": 36,
+      "title": "CM",
+      "release": {
+        "name": "1.5.1",
+        "url": "https://github.com/aerokube/cm/releases/tag/1.5.1",
+        "publishedAt": "2018-07-19T16:55:06Z"
+      },
+      "documentation": "https://aerokube.com/cm/latest/"
+    },
+    {
       "org": "aerokube",
       "name": "selenoid-ui",
-      "release": "1.6.0"
+      "description": "Graphical user interface for Selenoid project",
+      "stars": 93,
+      "title": "Selenoid UI",
+      "release": {
+        "name": "1.6.1",
+        "url": "https://github.com/aerokube/selenoid-ui/releases/tag/1.6.1",
+        "publishedAt": "2018-06-03T19:46:51Z"
+      },
+      "documentation": "https://aerokube.com/selenoid-ui/latest/"
     },
     {
-      "title": "Ggr",
-      "description": "Lightweight router to create scalable Selenium clusters",
       "org": "aerokube",
       "name": "ggr",
-      "release": "1.5.5"
+      "description": "A lightweight load balancer used to create big Selenium clusters",
+      "stars": 147,
+      "title": "GGR",
+      "release": {
+        "name": "1.6.0",
+        "url": "https://github.com/aerokube/ggr/releases/tag/1.6.0",
+        "publishedAt": "2018-07-18T03:27:28Z"
+      },
+      "documentation": "https://aerokube.com/ggr/latest/"
+    },
+    {
+      "org": "aerokube",
+      "name": "ggr-ui",
+      "description": "The missing /status API for Ggr",
+      "stars": 13,
+      "title": "GGR UI",
+      "release": {
+        "name": "1.1.1",
+        "url": "https://github.com/aerokube/ggr-ui/releases/tag/1.1.1",
+        "publishedAt": "2018-06-08T10:34:15Z"
+      },
+      "documentation": "https://aerokube.com/ggr-ui/latest/"
+    },
+    {
+      "org": "aerokube",
+      "name": "selenoid-grafana-example",
+      "description": "Telegraf + InfluxDB + Grafana example for selenoid metrics collection",
+      "stars": 9,
+      "title": "Selenoid + Grafana",
+      "release": {
+        "name": "1.0.0",
+        "url": "https://github.com/aerokube/selenoid-grafana-example/releases/tag/1.0.0",
+        "publishedAt": "2018-07-21T22:32:48Z"
+      },
+      "documentation": "https://grafana.com/dashboards/3632"
     }
   ]
 }
