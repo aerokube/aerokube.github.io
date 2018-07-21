@@ -10,6 +10,7 @@ export default
                     justify-content: center;
                     align-items: center;
                     position: relative;
+                    overflow: scroll;
                 }
 
                 .section-blue {

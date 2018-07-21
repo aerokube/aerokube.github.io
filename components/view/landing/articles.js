@@ -1,5 +1,6 @@
 import Section from "../../ui/section";
 import articles from "../../../data/articles.js"
+import video from "../../../data/video.js"
 
 export default () => (
     <Section theme="gray">
@@ -9,9 +10,9 @@ export default () => (
                     Aerokube is a small team of software developers
                 </h2>
 
-                <h3 className="section-subtitle">
+                <p className="section-subtitle">
                     We are creating large scale software testing infrastructure for more than 6 years.
-                </h3>
+                </p>
 
                 <p>
                     Our experience in building large Selenium clusters allows to create scalable Selenium
@@ -20,17 +21,23 @@ export default () => (
                     We also contribute to open-source Selenium tools development.
                 </p>
 
-                <p className="sub">
-                    Take a look at our articles to learn more about what we do.
-                </p>
             </div>
 
-            <div className="column">
+            <div className="column column_right">
                 <div className="links">
                     <h3 className="section-title">
                         Articles
                     </h3>
                     { articles.map(({title, url}) => (<a className="link" key={url} href={url}>{title}</a>)) }
+                </div>
+            </div>
+
+            <div className="column column_right">
+                <div className="links">
+                    <h3 className="section-title">
+                        Video
+                    </h3>
+                    { video.map(({title, url}) => (<a className="link" key={url} href={url}>{title}</a>)) }
                 </div>
             </div>
         </div>
@@ -51,7 +58,6 @@ export default () => (
          font-size: 23px;
          line-height: 1.3em;
          margin-bottom: 15px;
-         color: #ccc;
       }
 
       .sub {
@@ -65,14 +71,19 @@ export default () => (
         line-height: 1.6em;
         font-size: 18px;
         flex-direction: column;
+        height: 100%;
       }
 
       .column {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
         padding: 10px 20px 10px 20px;
+        flex: 1 1 50%;
+      }
+
+      .column_right {
+        flex: 1 1 25%;
       }
 
       .column p {
@@ -82,6 +93,7 @@ export default () => (
       .links {
         align-self: center;
         line-height: 40px;
+        width: 100%;
       }
 
       .link, .link:visited {
@@ -99,13 +111,9 @@ export default () => (
 
 
 
-      @media screen and (min-width: 580px) {
+      @media screen and (min-width: 720px) {
         .group {
             flex-direction: row;
-        }
-
-        .column {
-            width: 50%;
         }
       }
 
