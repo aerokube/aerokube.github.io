@@ -32,10 +32,8 @@ const Index =
                     tool <br/> for Aerokube projects.
                 </p>
 
-                <div className='cli'>
-                    <div className='cli__inner'>
-                        <CLI />
-                    </div>
+                <div className='cli-container'>
+                    <CLI />
                 </div>
             </Section>
 
@@ -47,21 +45,16 @@ const Index =
 
       /* = CLI
        * ==================================================================== */
-      .cli {
+      .cli-container {
         display: flex;
         justify-content: center;
         margin-top: 40px;
+        margin-bottom: -50px;
         padding-bottom: 30px;
         z-index: 1;
-      }
-
-      .cli__inner {
-        position: relative;
-        width: 100%;
-        min-height: 398px;
-        max-width: 560px;
         font-size: 10px;
       }
+
 
       /* = SEPARATOR
        * ==================================================================== */

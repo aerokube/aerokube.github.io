@@ -1,83 +1,70 @@
 const CLI = () => (
     <div className='cli'>
-        <div className='cli__buttons'>
-            <i className='cli__button'/>
-            <i className='cli__button'/>
-            <i className='cli__button'/>
+        <div className='cli__header'>
+            <div className='cli__buttons'>
+                <i className='cli__button'/>
+                <i className='cli__button'/>
+                <i className='cli__button'/>
+            </div>
+            <div className="cli__title">Terminal</div>
         </div>
-        <div className='cli__header'>Terminal</div>
 
         <div className="cli__body">
-            <ul className='cli__lines'>
-                <li className='cli__line'>$ ./cm selenoid start</li>
-                <li className='cli__line cli__line--break'/>
-                <li className='cli__line cli__line--result'>Downloading Selenoid...</li>
-                <li className='cli__line cli__line--break'/>
-                <li className='cli__line cli__line--result'>
-                    Getting Selenoid release information for version: latest
-                <li className='cli__line cli__line--result'>
-                    <span className='cli__line-time'>23:47:27</span>&nbsp;
-                    Downloading Selenoid release from https://github.com/aerokube/selenoid/releases/
-                </li>
-                </li>
-                <li className='cli__line cli__line--result'>
-                    7.19 MiB / 7.19 MiB [==========================] 100.00% 2s
-                </li>
-                <li className='cli__line cli__line--result'>
-                    <span className='cli__line-time'>23:47:31</span>&nbsp;
-                    Selenoid binary saved to ~/.aerokube/selenoid/selenoid
-                </li>
-                <li className='cli__line cli__line--result'>
-                    <span className='cli__line-time'>23:47:31</span>&nbsp;
-                    Configuring Selenoid...
-                </li>
-                <li className='cli__line cli__line--result'>
-                    <span className='cli__line-time'>23:47:31</span>&nbsp;
-                    Downloading browser data from: https://raw.githubusercontent.com/aerokube/cm/master/browsers.json
-                </li>
-                <li className='cli__line cli__line--result'>
-                    <span className='cli__line-time'>23:47:31</span>&nbsp;
-                    Processing Chrome...
-                </li>
-                <li className='cli__line cli__line--result'>
-                    <span className='cli__line-time'>23:47:31</span>&nbsp;
-                    Downloading driver from http://.../2.29/chromedriver_mac64.zip...
-                </li>
-                <li className='cli__line cli__line--result'>
-                    4.63 MiB / 4.63 MiB [==========================] 100.00% 0s
-                </li>
-                <li className='cli__line cli__line--result'>
-                    <span className='cli__line-time'>23:47:36</span>&nbsp;
-                    Starting Selenoid...
-                </li>
-              <li className='cli__line cli__line--result'>
-                    <span className='cli__line-time'>23:47:36</span>&nbsp;
-                  Successfully started Selenoid
-                </li>
-                {/* TODO: Add animation */}
-            </ul>
+            <div className='cli__lines'>
+                <div className="cli__line">$ curl -s https://aerokube.com/cm/bash | bash</div>
+                <div className="cli__line cli__line--break"/>
+                <div className="cli__line"> █████╗ ███████╗██████╗  ██████╗ ██╗  ██╗██╗   ██╗██████╗ ███████╗</div>
+                <div className="cli__line">██╔══██╗██╔════╝██╔══██╗██╔═══██╗██║ ██╔╝██║   ██║██╔══██╗██╔════╝</div>
+                <div className="cli__line">███████║█████╗  ██████╔╝██║   ██║█████╔╝ ██║   ██║██████╔╝█████╗</div>
+                <div className="cli__line">██╔══██║██╔══╝  ██╔══██╗██║   ██║██╔═██╗ ██║   ██║██╔══██╗██╔══╝</div>
+                <div className="cli__line">██║  ██║███████╗██║  ██║╚██████╔╝██║  ██╗╚██████╔╝██████╔╝███████╗</div>
+                <div className="cli__line">╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝</div>
+                <div className="cli__line cli__line--break"/>
+                <div className="cli__line"> % Total    % Received % Xferd  Average Current</div>
+                <div className="cli__line"> 100   605    0   605    0     0    598    599</div>
+                <div className="cli__line"> 100 9673k  100 9673k    0     0  1526k  2330k</div>
+                <div className="cli__line cli__line--break"/>
+                <div className="cli__line cli__line--break"/>
+                <div className="cli__line"> SUCCESSFULLY DOWNLOADED!</div>
+                <div className="cli__line cli__line--break"/>
+                <div className="cli__line"> Git Revision: 1.5.1</div>
+                <div className="cli__line"> UTC Build Time: 2018-07-19_04:58:34PM</div>
+                <div className="cli__line cli__line--break"/>
+                <div className="cli__line"> Now you can run Selenoid with cm:</div>
+                <div className="cli__line"> ./cm selenoid start --vnc</div>
+                <div className="cli__line cli__line--break"/>
+                <div className="cli__line"> To get instant help just type:</div>
+                <div className="cli__line"> ./cm --help</div>
+            </div>
         </div>
-
         <style jsx>{`
       .cli {
         text-align: left;
         border-radius: 6px;
         box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.35);
         width: 100%;
-        position: relative;
         overflow: hidden;
       }
 
-      .cli__body {
-        background-color: #FFFFD8;
-        min-height: 398px;
-        padding-bottom: 20px;
+      .cli__header {
+        text-align: center;
+        padding: 10px 0;
+        font-size: 12px;
+        color: #fff;
+        font-weight: 500;
+        background-color: #7a91c4;
+        display: flex;
+      }
+
+      .cli__title {
+        flex: 1 0;
+        padding-right: 15px;
       }
 
       .cli__buttons {
-        position: absolute;
-        top: 12px;
-        left: 12px;
+        flex: 0 0 50px;
+        padding-left: 10px;
+        margin-top: 5px;
       }
 
       .cli__button {
@@ -90,40 +77,28 @@ const CLI = () => (
         background-color: #a8b5c8
       }
 
-      .cli__header {
-        text-align: center;
-        padding: 10px 0;
-        font-size: 12px;
-        color: #fff;
-        font-weight: 500;
-        background-color: #7a91c4;
+      .cli__body {
+        background-color: #FFFFD8;
+        padding-bottom: 20px;
+        width: 100%;
       }
 
       .cli__lines {
-        list-style: none;
+        width: 100%;
         padding: 30px 40px 0;
         font-size: 14px;
         line-height: 20px;
         font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Courier New", monospace;
         letter-spacing: .1em;
         color: #333333;
-        overflow: scroll;
+        display: flex;
+        flex-direction: column;
       }
 
       .cli__line {
-        word-wrap: break-word;
-      }
-
-      .cli__line-scope {
-        color: #b4e6fd;
-      }
-
-      .cli__line-time {
-        color: #767574;
-      }
-
-      .cli__line-diff {
-        color: #757065;
+        white-space: pre-wrap;
+        width: 100%;
+        flex: 0 0 100%;
       }
 
       .cli__line--result {
@@ -134,9 +109,6 @@ const CLI = () => (
         height: 20px;
       }
 
-      .cli__line--indent {
-        margin-left: 12px;
-      }
     `}</style>
     </div>
 );
