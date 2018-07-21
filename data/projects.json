@@ -15,19 +15,6 @@
     },
     {
       "org": "aerokube",
-      "name": "moon",
-      "description": "Moon project documentation",
-      "stars": 6,
-      "title": "Moon",
-      "release": {
-        "name": "1.1.2",
-        "url": "https://github.com/aerokube/moon/releases/tag/1.1.2",
-        "publishedAt": "2018-06-05T14:16:16Z"
-      },
-      "documentation": "http://aerokube.com/moon/latest"
-    },
-    {
-      "org": "aerokube",
       "name": "cm",
       "description": "Configuration manager for Aerokube products",
       "stars": 36,
@@ -51,45 +38,6 @@
         "publishedAt": "2018-06-03T19:46:51Z"
       },
       "documentation": "https://aerokube.com/selenoid-ui/latest/"
-    },
-    {
-      "org": "aerokube",
-      "name": "ggr",
-      "description": "A lightweight load balancer used to create big Selenium clusters",
-      "stars": 147,
-      "title": "GGR",
-      "release": {
-        "name": "1.6.0",
-        "url": "https://github.com/aerokube/ggr/releases/tag/1.6.0",
-        "publishedAt": "2018-07-18T03:27:28Z"
-      },
-      "documentation": "https://aerokube.com/ggr/latest/"
-    },
-    {
-      "org": "aerokube",
-      "name": "ggr-ui",
-      "description": "The missing /status API for Ggr",
-      "stars": 13,
-      "title": "GGR UI",
-      "release": {
-        "name": "1.1.1",
-        "url": "https://github.com/aerokube/ggr-ui/releases/tag/1.1.1",
-        "publishedAt": "2018-06-08T10:34:15Z"
-      },
-      "documentation": "https://aerokube.com/ggr-ui/latest/"
-    },
-    {
-      "org": "aerokube",
-      "name": "selenoid-grafana-example",
-      "description": "Telegraf + InfluxDB + Grafana example for selenoid metrics collection",
-      "stars": 9,
-      "title": "Selenoid + Grafana",
-      "release": {
-        "name": "1.0.0",
-        "url": "https://github.com/aerokube/selenoid-grafana-example/releases/tag/1.0.0",
-        "publishedAt": "2018-07-21T22:32:48Z"
-      },
-      "documentation": "https://grafana.com/dashboards/3632"
     }
   ]
 }
