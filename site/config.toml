@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Aerokube | Efficient Selenium Testing Infrastructure"
+title = "Aerokube | Efficient Browser Automation Infrastructure"
 
 enableRobotsTXT = true
 
@@ -11,4 +11,4 @@ enableRobotsTXT = true
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
-description = "We deliver lightning fast and efficient Selenium testing infrastructure: Selenoid for Docker, Moon for Kubernetes and Browsers - online Selenium platform"
+description = "We deliver lightning fast and efficient browser automation infrastructure: Selenoid for Docker, Moon for Kubernetes and Moon Cloud - online browser automation platform. Our solutions support Selenium, Playwright, Cypress and Puppeteer out of the box."
